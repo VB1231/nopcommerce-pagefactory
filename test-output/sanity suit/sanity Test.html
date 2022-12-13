@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>TestNG:  sanity Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>sanity Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 13 21:47:16 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22519 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.demo.testsuit.RegisterMenuTest.UserShouldNavigateToRegisterPageSuccessfully()'><b>UserShouldNavigateToRegisterPageSuccessfully</b><br>Test class: com.nopcommerce.demo.testsuit.RegisterMenuTest<br/>
+<a href="#Output-81194567" onClick='toggleBox("Output-81194567", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-81194567" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-81194567">
+Click on register page[[ChromeDriver: chrome on WINDOWS (89414eb1ca8a316225edf25d10870ff2)] -> xpath: //a[contains(text(),'Register')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.demo.testsuit.RegisterMenuTest@1da51a35</td></tr>
+<tr>
+<td title='com.nopcommerce.demo.testsuit.ComputerTest.verifyProductArrangeInAlphaBaticalOrder()'><b>verifyProductArrangeInAlphaBaticalOrder</b><br>Test class: com.nopcommerce.demo.testsuit.ComputerTest<br/>
+<a href="#Output-1896708863" onClick='toggleBox("Output-1896708863", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1896708863" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1896708863">
+click on computer page[[ChromeDriver: chrome on WINDOWS (00a481946aa01dc29e92430983e15665)] -> link text: Computers]<br/>
+click on desktop page[[ChromeDriver: chrome on WINDOWS (00a481946aa01dc29e92430983e15665)] -> link text: Desktops]<br/>
+click on select position[[ChromeDriver: chrome on WINDOWS (00a481946aa01dc29e92430983e15665)] -> xpath: //select[@id='products-orderby']]<br/>
+select from drop down[[ChromeDriver: chrome on WINDOWS (00a481946aa01dc29e92430983e15665)] -> xpath: //select[@id='products-orderby']]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.demo.testsuit.ComputerTest@4d1b0d2a</td></tr>
+<tr>
+<td title='com.nopcommerce.demo.testsuit.TopMenuTest.selectTopMenu()'><b>selectTopMenu</b><br>Test class: com.nopcommerce.demo.testsuit.TopMenuTest</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.demo.testsuit.TopMenuTest@16022d9d</td></tr>
+<tr>
+<td title='com.nopcommerce.demo.testsuit.LoginTest.verifyUserShouldNavigateToLoginPageSuccessfully()'><b>verifyUserShouldNavigateToLoginPageSuccessfully</b><br>Test class: com.nopcommerce.demo.testsuit.LoginTest<br/>
+<a href="#Output-393481646" onClick='toggleBox("Output-393481646", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-393481646" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-393481646">
+click on login link[[ChromeDriver: chrome on WINDOWS (7ac6a82e4dfe1521f27b817c616b0f82)] -> link text: Log in]<br/>
+verify welcome text[[ChromeDriver: chrome on WINDOWS (7ac6a82e4dfe1521f27b817c616b0f82)] -> xpath: //h1[contains(text(),'Welcome, Please Sign In!')]]<br/>
+verify welcome text[[ChromeDriver: chrome on WINDOWS (7ac6a82e4dfe1521f27b817c616b0f82)] -> xpath: //h1[contains(text(),'Welcome, Please Sign In!')]]<br/>
+enter email [[ChromeDriver: chrome on WINDOWS (7ac6a82e4dfe1521f27b817c616b0f82)] -> id: Email]<br/>
+enter password [[ChromeDriver: chrome on WINDOWS (7ac6a82e4dfe1521f27b817c616b0f82)] -> name: Password]<br/>
+click on login button[[ChromeDriver: chrome on WINDOWS (7ac6a82e4dfe1521f27b817c616b0f82)] -> xpath: //button[contains(text(),'Log in')]]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.demo.testsuit.LoginTest@6d3af739</td></tr>
+<tr>
+<td title='com.nopcommerce.demo.testsuit.ElectronicTest.verifyUserShouldNavigateToCellPhonesPageSuccessfully()'><b>verifyUserShouldNavigateToCellPhonesPageSuccessfully</b><br>Test class: com.nopcommerce.demo.testsuit.ElectronicTest<br/>
+<a href="#Output-394349340" onClick='toggleBox("Output-394349340", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-394349340" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-394349340">
+mouse hover to electronic page[[ChromeDriver: chrome on WINDOWS (c4fe17581a94d3396bca32f5b57afe7a)] -> link text: Electronics]<br/>
+click on cell phone page[[ChromeDriver: chrome on WINDOWS (c4fe17581a94d3396bca32f5b57afe7a)] -> link text: Cell phones]<br/>
+get text from cell phone[[ChromeDriver: chrome on WINDOWS (c4fe17581a94d3396bca32f5b57afe7a)] -> xpath: //h1[contains(text(),'Cell phones')]]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.demo.testsuit.ElectronicTest@543788f3</td></tr>
+</table><p>
+</body>
+</html>
